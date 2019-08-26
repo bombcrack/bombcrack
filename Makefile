@@ -5,7 +5,10 @@ crackdir = $(PWD)/Crack
 deobfdir = $(PWD)/Deobfuscate
 
 getbomb:
-	if [ ! -d "$(tbombdir)" ]; then git clone https://github.com/thespeedx/tbomb.git "$(tbombdir)"; fi
+	if [ ! -d "$(tbombdir)" ]; then \
+        git clone git://github.com/thespeedx/tbomb.git "$(tbombdir)" || \
+        git clone git://github.com/darkestentropy/tbomb.git "$(tbombdir)"; \
+	fi
 
 clean:
 	rm -rf "$(workdir)"
