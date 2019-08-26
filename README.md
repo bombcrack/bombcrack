@@ -15,4 +15,4 @@ There you go, a cracked TBomb is at your hand (just next to the Makefile).
 Catch this, @TheSpeedX.
 
 # Feedback
-For any questions and suggestions - [mailto:entropial@protonmail.ch](entropial@protonmail.ch).
+For any questions and suggestions - [entropial@protonmail.ch](mailto:entropial@protonmail.ch).
