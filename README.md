@@ -1,5 +1,5 @@
 # BombCrack
-A cracker for the `bomber.py` obfuscated Python script from TheSpeedX/TBomb (also check issue [#22](https://github.com/TheSpeedX/TBomb/issues/22).
+A cracker for the `bomber.py` obfuscated Python script from TheSpeedX/TBomb (also check issue [#22](https://github.com/TheSpeedX/TBomb/issues/22).)
 
 # Usage
 Just a few commands and you get somewhat cracked (script is mostly `eval` and twice compressed - with `zlib` and `lzma` respectively.)
