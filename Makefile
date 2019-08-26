@@ -25,4 +25,6 @@ crack: mkenv
 	python "$(crackdir)/decompress_lzma.py" $(workdir)
 	mv "$(workdir)/bomber.py.decompressed" "$(workdir)/bomber.py.cracked"
 	mv "$(workdir)/bomber.py.cracked" "$(PWD)/bomber.py.cracked"
+
+prettify: crack
 	autopep8 --in-place -aaa "$(PWD)/bomber.py.cracked"
