@@ -13,3 +13,6 @@ $ make clean crack prettify # Prettifying may take some time. If you don't want 
 
 There you go, a cracked TBomb is at your hand (just next to the Makefile).
 Catch this, @TheSpeedX.
+
+# Feedback
+For any questions and suggestions - [mailto:entropial@protonmail.ch](entropial@protonmail.ch).
