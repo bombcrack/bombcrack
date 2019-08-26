@@ -11,6 +11,8 @@ $ pip install -r requirements.txt # Note - you may possibly need to run this as 
 $ make clean crack prettify # Prettifying may take some time. If you don't want it - remove 'prettify' target
 ```
 
+Makefile `crack` target clones TheSpeedX/TBomb repository, however, in case its attempt will fail - darkestentropy/TBomb (my mirror repository of TheSpeedX/TBomb) will be cloned instead.
+
 There you go, a cracked TBomb is at your hand (just next to the Makefile).
 Catch this, @TheSpeedX.
 
