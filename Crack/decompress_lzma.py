@@ -1,3 +1,5 @@
+# This script is used to decompress lzma-compressed `bomber.py` contents.
+
 import lzma
 import base64
 from pathlib import Path

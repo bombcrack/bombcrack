@@ -1,3 +1,6 @@
+# This script attaches `cracker.py` file contents
+# to the decompressed & decoded `bomber.py` file.
+
 from pathlib import Path
 from sys import argv
 from os import linesep

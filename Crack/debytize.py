@@ -1,3 +1,5 @@
+# This script processes byte strings in decompressed `bomber.py` script.
+
 import tokenize
 from pathlib import Path
 from sys import argv

@@ -1,3 +1,7 @@
+# This script is only used as an appendix to the
+# decompressed & decoded `bomber.py` script.
+# It should not be used in any other way.
+
 string = base64.b64decode(trust)
 count = 0
 while True:

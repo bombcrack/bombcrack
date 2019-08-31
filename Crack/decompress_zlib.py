@@ -1,3 +1,5 @@
+# This script is used to decompress zlib-compressed `bomber.py` contents.
+
 import zlib
 import base64
 from pathlib import Path
