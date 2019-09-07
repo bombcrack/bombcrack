@@ -50,14 +50,14 @@ That would be a logical consequence to *making a client* (not server) *applicati
 
 ### What will you do next?
 So, there are few possible scenarios of all this mess happening.
-1. TBomb is going open-source.
-   In this case, I will archive this repository as well as my mirror repo, and will just live my life without interfering with TBomb. *Until they make it closed client app again*.
-2. TBomb gets more powerful obfuscation/encoding **without getting license that allows me to modify it**.
-   There will always be some ways to expose *at least* obfuscated code. I'll keep on doing my job - trying to bring up
+~~1. TBomb is going open-source.~~
+   ~~In this case, I will archive this repository as well as my mirror repo, and will just live my life without interfering with TBomb. *Until they make it closed client app again*.~~
+~~2. TBomb gets more powerful obfuscation/encoding **without getting license that allows me to modify it**.~~
+~~There will always be some ways to expose *at least* obfuscated code. I'll keep on doing my job - trying to bring up~~
 3. TBomb gets more restrictive license.
    What do you think? Of course, I'd give up on this project further development and adapting it to next versions. _Note - **next** versions. Versions with MIT license will be unaffected as long as they are in my mirror repo._
-4. Things are not changing.
-   Then my plans are not chaning, too.
+~~4. Things are not changing.~~
+~~Then my plans are not chaning, too.~~
 
 # Feedback
 Want to contact me? Use this:
