@@ -1,6 +1,13 @@
 # BombCrack
 A cracker for the `bomber.py` obfuscated Python script from TheSpeedX/TBomb (also check issue [#22](https://github.com/TheSpeedX/TBomb/issues/22).)
 
+## Project is discontinued
+Since TBomb authors have decided to switch from MIT license to Creative Commons, I'm no longer allowed to modify TBomb sources, as well as using TBomb from its original authors and I will no longer synchronize my mirror repository.
+
+I will not hide this and mirror repositories from public, however, they will be archived, and no changes will be made in future.
+
+*Good night sweet crack~*
+
 # Usage
 Just a few commands and you get somewhat cracked (script is mostly `eval` and twice compressed - with `zlib` and `lzma` respectively.)
 
