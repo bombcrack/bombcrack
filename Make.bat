@@ -1,9 +1,13 @@
 @echo off
-echo Notice!
-echo This batch file is a self-interpreted emulation of Makefile.
-echo Note that it doesn't support key features like running multiple targets or
-echo specifying target dependencies. Use at your own risk and read @rem-arked hints in script.
-echo.
+if not exist ".makenotice" (
+    echo Notice!
+    echo This batch file is a self-interpreted emulation of Makefile.
+    echo Note that it doesn't support key features like running multiple targets or
+    echo specifying target dependencies. Use at your own risk and read @rem-arked hints in script.
+    echo.
+    ping localhost -n 3 >NUL
+    echo. >.makenotice
+)
 
 set PWD=%~dp0
 set workdir=%PWD%.work
@@ -18,7 +22,7 @@ if "%1" == "prettify" goto :prettify
 if "%1" == "clean" goto :clean
 
 :notarget
-echo :: No target specified. Exiting.
+echo :: No targets found matching '%1'. Exiting.
 goto :eof
 
 :getbomb
@@ -40,19 +44,19 @@ python %crackdir%\decompress_zlib.py %workdir%
 python %crackdir%\debytize.py %workdir%
 python %crackdir%\attach_cracker.py %workdir% %crackdir%
 python %workdir%\bomber.py.cracker_attached> %workdir%\bomber.py.cracked
-copy %workdir%\bomber.py.cracker %workdir%\bomber.py.source
+copy /Y %workdir%\bomber.py.cracked %workdir%\bomber.py.source
 python %crackdir%\decompress_lzma.py %workdir%
-move %workdir%\bomber.py.decompressed %workdir%\bomber.py.cracked
-move %workdir%\bomber.py.cracker %PWD%\bomber.py.cracked
+copy /Y %workdir%\bomber.py.decompressed %workdir%\bomber.py.cracked
+copy /Y %workdir%\bomber.py.cracked %PWD%bomber.py.cracked
 goto :aftertarget
 
 :prettify 
 @rem @dependsOn crack
 echo :: Running prettify target...
-autopep8 --in-place -aaa %PWD%\bomber.py.cracked
+autopep8 --in-place -aaa %PWD%bomber.py.cracked
 goto :aftertarget
 
-:clean  
+:clean
 echo :: Running clean target...
 rd /s /q %workdir%
 rd /s /q %tbombdir%
@@ -61,5 +65,7 @@ goto :aftertarget
 :aftertarget
 if not "%ERRORLEVEL%" == "0" (
     echo :: Task failed ^(exit code %ERRORLEVEL%^)
+) else (
+    echo :: Task finished successfully.
 )
 goto :eof
