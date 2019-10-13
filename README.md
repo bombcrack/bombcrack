@@ -40,7 +40,16 @@ $ make clean crack prettify # Prettifying may take some time. If you don't want 
 
 There you go, a cracked TBomb is at your hand (just next to the Makefile, named `bomber.py.cracked` - try running it with Python - you'll see it's fully functional).
 
-Makefile `crack` target clones TheSpeedX/TBomb repository, however, in case its attempt will fail - darkestentropy/TBomb (my mirror repository of TheSpeedX/TBomb) will be cloned instead.
+Makefile `crack` target clones darkestentropy/TBomb (my mirror repository of TheSpeedX/TBomb)
+now due to License modifications made by TBomb authors.
+
+## De-mirroring
+BombCrack uses [mirrored snapshot of TBomb](https://github.com/DarkestEntropy/TBomb)
+due to strict license of original TBomb, however, cracking algorithm should work
+on a future versions of TBomb as they're encoded the same way past versions were encoded.
+
+To do so, open Makefile (\*nix users) or Make.bat (Windows users), find target `getbomb` and
+modify cloning URL.
 
 # Feedback
 Want to contact me? Use this:
