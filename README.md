@@ -34,8 +34,10 @@ $ make clean crack prettify # Prettifying may take some time. If you don't want 
 > cd BombCrack
 > pip install -r requirements.txt
 > make clean
+> make getbomb
+> make mkenv
 > make crack
-@rem Prettifying isn't neccessary, but would certainly make cracked source cleaner.
+> rem Prettifying isn't neccessary, but would certainly make cracked source cleaner.
 > make prettify
 ```
 
