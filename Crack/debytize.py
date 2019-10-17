@@ -11,7 +11,7 @@ tokens = []
 for t_type, string, *_ in tokenize.tokenize(fd.readline):
     token = [t_type, string]
     if t_type == 3:
-        token[1] = string.encode('utf8').decode('unicode-escape') 
+        token[1] = string.encode('utf8').decode('unicode-escape')
     tokens.append(token)
 fd.close()
 
