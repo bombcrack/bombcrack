@@ -5,6 +5,8 @@ A cracker for the `bomber.py` obfuscated Python script from TheSpeedX/TBomb (als
 Finally, [TBomb is being open-sourced](https://github.com/TheSpeedX/TBomb/issues/41)!
 That means BombCrack has really no use from now on, and will not be worked on until TBomb authors decide to obfuscate its code again, which we all hope will never happen in future.
 
+***Cracker script itself no longer works because neither TBomb or my TBomb fork has no obfuscation***
+
 Thanks to everyone who helped me out with BombCrack and supported me in any way:
 * @scpketer - the person who gave me an inspiration.
 * @KnightSec-Official - the person who supported me in development process.
