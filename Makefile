@@ -6,7 +6,7 @@ deobfdir = $(PWD)/Deobfuscate
 
 getbomb:
 	if [ ! -d "$(tbombdir)" ]; then \
-	    git clone git://github.com/darkestentropy/tbomb.git "$(tbombdir)"; \
+	    git clone git://github.com/darkestentropy/tbomb.git "$(tbombdir)" -b historical; \
 	fi
 
 clean:

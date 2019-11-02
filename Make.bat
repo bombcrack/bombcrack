@@ -27,7 +27,7 @@ goto :eof
 
 :getbomb
 echo :: Running getbomb target...
-if not exist %tbombdir% git clone git://github.com/darkestentropy/tbomb.git %tbombdir%
+if not exist %tbombdir% git clone git://github.com/darkestentropy/tbomb.git %tbombdir% -b historical
 goto :aftertarget
 
 :mkenv 
