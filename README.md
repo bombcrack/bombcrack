@@ -7,8 +7,6 @@ That means BombCrack has really no use from now on, and will not be worked on un
 
 Although TBomb is no longer obfuscated, I've restored a historical copy of how it looked like before
 it went open-source: check `historical` branch @ darkestentropy/TBomb.
-Script will clone TBomb sources from `historical` branch, but due to past limitations it still
-fails to crack it *without [scpketer's patch](https://github.com/darkestentropy/bombcrack/issues/4)*.
 
 Thanks to everyone who helped me out with BombCrack and supported me in any way:
 * @scpketer - the person who gave me an inspiration.
@@ -61,8 +59,3 @@ on a future versions of TBomb as they're encoded the same way past versions were
 
 To do so, open Makefile (\*nix users) or Make.bat (Windows users), find target `getbomb` and
 modify cloning URL.
-
-# Feedback
-Want to contact me? Use this:
-* E-mail: [entropial@protonmail.ch](mailto:entropial@protonmail.ch)
-* ~~Telegram: [@DarkestEntropy](https://t.me/DarkestEntropy)~~ **I NO LONGER HAVE ACCESS**. Use e-mail.
