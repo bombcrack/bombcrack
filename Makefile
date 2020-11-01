@@ -23,13 +23,13 @@ crack: mkenv
 	exit 1; \
 	fi
 
-	python "$(crackdir)/decompress_zlib.py" $(workdir)
+	python "$(crackdir)/decompress_lzma.py" $(workdir)
 	python "$(crackdir)/debytize.py" $(workdir)
 	python "$(crackdir)/attach_cracker.py" $(workdir) $(crackdir)
 
 	python "$(workdir)/bomber.py.cracker_attached" > "$(workdir)/bomber.py.cracked"
 	cp "$(workdir)/bomber.py.cracked" "$(workdir)/bomber.py.source"
-	python "$(crackdir)/decompress_lzma.py" $(workdir)
+	python "$(crackdir)/decompress_zlib.py" $(workdir)
 	mv "$(workdir)/bomber.py.decompressed" "$(workdir)/bomber.py.cracked"
 	mv "$(workdir)/bomber.py.cracked" "$(PWD)/bomber.py.cracked"
 

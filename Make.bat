@@ -40,12 +40,12 @@ goto :aftertarget
 :crack 
 @rem @dependsOn mkenv
 echo :: Running crack target...
-python %crackdir%\decompress_zlib.py %workdir%
+python %crackdir%\decompress_lzma.py %workdir%
 python %crackdir%\debytize.py %workdir%
 python %crackdir%\attach_cracker.py %workdir% %crackdir%
 python %workdir%\bomber.py.cracker_attached> %workdir%\bomber.py.cracked
 copy /Y %workdir%\bomber.py.cracked %workdir%\bomber.py.source
-python %crackdir%\decompress_lzma.py %workdir%
+python %crackdir%\decompress_zlib.py %workdir%
 copy /Y %workdir%\bomber.py.decompressed %workdir%\bomber.py.cracked
 copy /Y %workdir%\bomber.py.cracked %PWD%bomber.py.cracked
 goto :aftertarget
